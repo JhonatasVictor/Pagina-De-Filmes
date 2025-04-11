@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Filmes</title>
+</head>
+<body>
+     <header>
+        <img class="logo" src="Imagens/Logo.png" alt="Logo">
+       
+        <div class="login-container">
+            <form id="loginForm">
+                <h2>Informe Seus Dados para Logar</h2>
+                <div class="input-group">
+                    <i>👤</i>
+                    <input type="text" id="username" required>
+                    <label for="username">Email ou Usuário</label>
+                </div>
+                <div class="input-group">
+                    <i>🔒</i>
+                    <input type="password" id="password" required>
+                    <label for="password">Senha</label>
+                </div>
+                <button type="submit">Entrar</button>
+                <div class="links">
+                    <a href="#" id="forgotPassword">Esqueci a senha</a>
+                    <a href="#" id="register">Cadastrar novo usuário</a>
+                </div>
+            </form>
+        </div>
+
+     </header>
+
+     <h1 class="title-card">Escolha seu Plano</h1>
+    
+     <div class="toggle-container">
+         <div class="toggle-option active" id="showMonthly">Planos Mensais</div>
+         <div class="toggle-option" id="showAnnual">Planos Anuais</div>
+     </div>
+     
+     <div class="plans-container">
+         <!-- Planos Mensais (visíveis inicialmente) -->
+         <div class="plan-card monthly-plan">
+             <div class="plan-badge">BÁSICO</div>
+             <h3 class="plan-title">Essential</h3>
+             <div class="plan-price">R$ 14,90</div>
+             <div class="plan-period">por mês</div>
+             <ul class="plan-features">
+                 <li>Acesso a conteúdo básico</li>
+                 <li>1 dispositivo simultâneo</li>
+                 <li>Qualidade HD</li>
+                 <li>Anúncios limitados</li>
+             </ul>
+             <button class="plan-button plan-btn">Assinar</button>
+         </div>
+         
+         <div class="plan-card monthly-plan">
+             <div class="plan-badge">POPULAR</div>
+             <h3 class="plan-title">Standard</h3>
+             <div class="plan-price">R$ 24,90</div>
+             <div class="plan-period">por mês</div>
+             <ul class="plan-features">
+                 <li>Acesso a conteúdo completo</li>
+                 <li>2 dispositivos simultâneos</li>
+                 <li>Qualidade Full HD</li>
+                 <li>Sem anúncios</li>
+                 <li>5 downloads/mês</li>
+             </ul>
+             <button class="plan-button">Assinar</button>
+         </div>
+         
+         <div class="plan-card monthly-plan">
+             <div class="plan-badge">PREMIUM</div>
+             <h3 class="plan-title">Ultimate</h3>
+             <div class="plan-price">R$ 34,90</div>
+             <div class="plan-period">por mês</div>
+             <ul class="plan-features">
+                 <li>Acesso completo + exclusivos</li>
+                 <li>4 dispositivos simultâneos</li>
+                 <li>Qualidade 4K Ultra HD</li>
+                 <li>Downloads ilimitados</li>
+                 <li>Conteúdo early access</li>
+             </ul>
+             <button class="plan-button">Assinar</button>
+         </div>
+         
+         <!-- Planos Anuais (ocultos inicialmente) -->
+         <div class="plan-card annual-plan" style="display: none;">
+             <div class="plan-badge">BÁSICO</div>
+             <h3 class="plan-title">Essential</h3>
+             <div class="plan-price">R$ 9,90</div>
+             <div class="plan-period">por mês (anual)</div>
+             <div class="annual-savings">Economize R$ 60,00 ao ano</div>
+             <ul class="plan-features">
+                 <li>Acesso a conteúdo básico</li>
+                 <li>1 dispositivo simultâneo</li>
+                 <li>Qualidade HD</li>
+                 <li>Anúncios limitados</li>
+                 <li>1 mês grátis</li>
+             </ul>
+             <button class="plan-button plan-btn">Assinar</button>
+         </div>
+         
+         <div class="plan-card annual-plan" style="display: none;">
+             <div class="plan-badge">POPULAR</div>
+             <h3 class="plan-title">Standard</h3>
+             <div class="plan-price">R$ 16,90</div>
+             <div class="plan-period">por mês (anual)</div>
+             <div class="annual-savings">Economize R$ 96,00 ao ano</div>
+             <ul class="plan-features">
+                 <li>Acesso a conteúdo completo</li>
+                 <li>2 dispositivos simultâneos</li>
+                 <li>Qualidade Full HD</li>
+                 <li>Sem anúncios</li>
+                 <li>10 downloads/mês</li>
+                 <li>2 meses grátis</li>
+             </ul>
+             <button class="plan-button">Assinar</button>
+         </div>
+         
+         <div class="plan-card annual-plan" style="display: none;">
+             <div class="plan-badge">PREMIUM</div>
+             <h3 class="plan-title">Ultimate</h3>
+             <div class="plan-price">R$ 22,90</div>
+             <div class="plan-period">por mês (anual)</div>
+             <div class="annual-savings">Economize R$ 144,00 ao ano</div>
+             <ul class="plan-features">
+                 <li>Acesso completo + exclusivos</li>
+                 <li>4 dispositivos simultâneos</li>
+                 <li>Qualidade 4K Ultra HD</li>
+                 <li>Downloads ilimitados</li>
+                 <li>Conteúdo early access</li>
+                 <li>3 meses grátis</li>
+                 <li>Brinde exclusivo</li>
+             </ul>
+             <button class="plan-button">Assinar</button>
+         </div>
+     </div>
+
+
+      <div class="streaming-showcase">
+        <div class="showcase-header">
+            <h1>Destaques Exclusivos</h1>
+            <p>Os melhores e mais comentados filmes do momento</p>
+        </div>
+        
+        <div class="movies-grid">
+            <!-- Filme 1 -->
+            <div class="movie-card">
+                <span class="genre-tag">Ação</span>
+                <img src="Imagens/Mickey17.jpg" alt="Mickey 17" class="movie-poster">
+                <div class="movie-overlay">
+                    <h3 class="movie-title">Mickey 17</h3>
+                    <p class="movie-info">Mickey Barnes e seu amigo Timo estão falidos após um fracasso nos negócios e fugindo de um agiota. Sem alternativas, eles se alistam como tripulantes de uma nave que deixa a Terra para colonizar o planeta Nilfheim — Timo como piloto e Mickey como um "Descartável". Como Descartável, Mickey é tratado como dispensável e recebe missões letais, pois, toda vez que morre, é "reimpresso" através de uma tecnologia de clonagem proibida na Terra. Durante a viagem, ele desenvolve um romance com Nasha Barridge, uma agente de segurança.</p>
+                    <div class="movie-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="rating-value">4.2/5</span>
+                    </div>
+                    <a href="#" class="watch-now">Assistir Agora</a>
+                </div>
+            </div>
+            
+            <!-- Filme 2 -->
+            <div class="movie-card">
+                <span class="genre-tag">Terror</span>
+                <img src="Imagens/O macaco 2.webp" alt="Silent Whispers" class="movie-poster">
+                <div class="movie-overlay">
+                    <h3 class="movie-title">O Macaco</h3>
+                    <p class="movie-info">Em 1999, Petey Shelburn tenta retornar e destruir um macaco Jolly Chimp em uma loja de antiguidades. Antes que ele possa fazê-lo, o macaco toca seus tambores, e uma reação em cadeia faz com que o dono da loja seja estripado com um arpão. Pouco depois, Petey desaparece, deixando sua esposa Lois para criar seus filhos gêmeos idênticos, Hal e Bill. Os gêmeos eventualmente descobrem o macaco em um armário contendo os pertences de seu pai e dão corda na chave. Mais tarde naquela noite, o macaco toca seus tambores enquanto eles estão no jantar, desencadeando a decapitação acidental de sua babá Annie.</p>
+                                 <div class="movie-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-value">4.8/5</span>
+                    </div>
+                    <a href="#" class="watch-now">Assistir Agora</a>
+                </div>
+            </div>
+            
+            <!-- Filme 3 -->
+            <div class="movie-card">
+                <span class="genre-tag">Ação</span>
+                <img src="Imagens/novocaine.jpeg" alt="Neon Paradox" class="movie-poster img3">
+                <div class="movie-overlay">
+                    <h3 class="movie-title">Novocaine</h3>
+                    <p class="movie-info">Nathan Caine é um introvertido de temperamento tranquilo que nasceu com insensibilidade congênita à dor (CIP). Ele trabalha como assistente de gerência em uma cooperativa de crédito em San Diego. Sua colega de trabalho, Sherry Margrave, demonstra interesse romântico por ele, mas Nathan hesita devido à sua condição e à falta de experiência com mulheres. Durante uma noite em um bar com Sherry, ele reencontra um antigo colega de escola que costumava intimidá-lo, chamando-o de "Novocaína". Para se vingar, Nathan e Sherry enganam o valentão, fazendo-o beber um shot de molho de pimenta, e acabam passando a noite juntos.</p>
+                    <div class="movie-rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="rating-value">4.5/5</span>
+                    </div>
+                    <a href="#" class="watch-now">Assistir Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Seu conteúdo principal aqui -->
+    </div>
+    
+    <footer class="streaming-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>LAGES FLIX</h2>
+                <p>O melhor conteúdo em streaming, com milhares de filmes, séries e documentários exclusivos para você assistir quando e onde quiser.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Documentários</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Informações</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Planos e Preços</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Conecte-se</h3>
+                <div class="social-links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                
+                <div class="newsletter-form">
+                    <h4>Assine nossa newsletter</h4>
+                    <input type="email" placeholder="Seu melhor e-mail">
+                    <button type="submit">Assinar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="payment-methods">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="American Express">
+                <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="PayPal">
+                <img src="https://cdn-icons-png.flaticon.com/512/825/825465.png" alt="Pix">
+            </div>
+            <p>© 2025 LAGES FLIX. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+
+       
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
