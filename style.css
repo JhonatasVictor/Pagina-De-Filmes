@@ -6,11 +6,12 @@
 }
 body {
     background: linear-gradient(to bottom, #2a2828, #000000);
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    
 }
 header {
-    background-image: url(/Imagens/principal.png);
-    width: 100vw;
+    background-image: url(/Imagens/principal.png);    
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
