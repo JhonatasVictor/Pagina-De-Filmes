@@ -48,7 +48,7 @@ header {
         background-color: rgba(0, 0, 0, 0.437);
         padding: 30px;
         border-radius: 10px;
-        width: 350px;
+        width: 300px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(1px);
         margin-top: 160px;
@@ -70,11 +70,11 @@ header {
 
     .input-group input {
         width: 100%;
-        padding: 12px 12px 11px 35px;
+        padding: 14px 11px 12px 20px;
         font-size: 16px;
         color: #fff;
         border: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #f06a09;
         outline: none;
         background: transparent;
     }
@@ -84,6 +84,7 @@ header {
         top: 10px;
         left: 35px;
         color: #ffffff;
+        
         pointer-events: none;
         transition: all 0.3s ease;
     }
@@ -100,7 +101,9 @@ header {
         position: absolute;
         top: 10px;
         left: 10px;
+        margin-right: 50px;
         color: #ffffff;
+
     }
 
     button {
@@ -246,7 +249,7 @@ header {
     }
     
     .toggle-container {
-        width: 255px;
+        width: 250px;
         margin-left: 50px;
         display: flex;
         background-color: #333;
@@ -260,7 +263,7 @@ header {
         cursor: pointer;
         border-radius: 15px;
         font-weight: 600;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     .toggle-option.active {
