@@ -605,6 +605,8 @@ header {
         body {
             overflow-x: hidden;
             background: linear-gradient(to bottom, #000000, #211f1f) no-repeat fixed;
+            width: 100vw;
+            height: 100vh;
         }
         header {
             background-image: url(Imagens/principal.png);
@@ -627,8 +629,12 @@ header {
             margin-top: 35px;  
 
             .toggle-option {
-                font-size: 0.7rem;
+                font-size: 0.6rem;
+                width: 50px;
+                
+            
             }
+        
         }
         .title-card {
             font-size: 1.9rem;
@@ -637,7 +643,7 @@ header {
         }
         .plans-container {
             max-width: 250px;
-            margin-left: 130px;
+            margin-left: 80px;
         
             
         }
