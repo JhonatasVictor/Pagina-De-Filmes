@@ -631,7 +631,7 @@ header {
             .toggle-option {
                 font-size: 0.6rem;
                 width: 50px;
-                
+
             
             }
         
@@ -673,6 +673,9 @@ header {
             margin-top: 50px;
             
             
+         }
+         .showcase-header {
+            margin-right: 60px;
          }
          .streaming-footer {
             margin-top: 650px;
