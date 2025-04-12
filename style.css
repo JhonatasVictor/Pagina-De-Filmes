@@ -660,6 +660,8 @@ header {
         }
          .movies-grid {
             display: inline;
+            height: 150px;
+            margin-bottom: 60px;
             
             
          }
