@@ -27,3 +27,49 @@ document.getElementById('showAnnual').addEventListener('click', function() {
     });
 })
 
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio
+    limparMensagensErro(); // Limpa mensagens anteriores
+
+        // Captura dos valores
+        const nome = document.getElementById('username');
+        const senha = document.getElementById('password');
+        
+        let formularioValido = true;
+        
+        // Validação do nome
+        if (nome.value.trim() === '') {
+          mostrarErro(nome, 'Por favor, preencha o nome ou Email válidos');
+          formularioValido = false;
+        }
+        
+        // Validação do email
+        if (!senha.value.trim) {
+          mostrarErro(senha, 'Por favor, insira uma senha válida');
+          formularioValido = false;
+        }
+        
+        // Se tudo estiver válido, envia o formulário
+        if (formularioValido) {
+          this.submit();
+        }
+      });
+
+      function mostrarErro(group, mensagem) {
+        const erroId = group.id + '-erro';
+        const elementoErro = document.getElementById(erroId);
+        elementoErro.textContent = mensagem;
+        group.classList.add('invalido');
+      }
+      
+      function limparMensagensErro() {
+        // Limpa todas as mensagens de erro
+        const mensagensErro = document.querySelectorAll('.mensagem-erro');
+        mensagensErro.forEach(erro => erro.textContent = '');
+        
+        // Remove a classe 'invalido' de todos os campos
+        const camposInvalidos = document.querySelectorAll('.invalido');
+        camposInvalidos.forEach(group => group.classList.remove('invalido'));
+      }
+
+

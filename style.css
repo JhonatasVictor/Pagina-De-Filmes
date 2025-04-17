@@ -108,6 +108,16 @@ header {
         color: #ffffff;
 
     }
+    .mensagem-erro {
+        color: red;
+        font-size: 0.8em;
+        display: block;
+        margin-top: 5px;
+      }
+      
+      input.invalido {
+        border: 1px solid red;
+      }
 
     button {
         width: 100%;
